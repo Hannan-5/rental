@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #det1{
+            margin-top: 20px;
+        }
+        #det2{
+            margin-top: 20px;
+        }
+        #det3{
+            margin-top: 30px;
+        }
+        .table{
+            margin-top: 30px;
+            border: 1px solid black;
+        }
+        #det6{
+          margin-top: 25px;
+        }
+    </style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid text-light">
+          <a class="navbar-brand link-light" href="#">CAR RENTAL</a>
+          <button class="navbar-toggler link-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="tel:1234567895">Contact Us - 1234567895</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.ford.co.th/content/ford/th/en_th/site-wide-content/billboard-carousels/mustang-overview/jcr:content/par/billboard/imageComponent/image.imgs.full.high.jpg" class="d-block w-100" height="40%" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WELCOME TO CAR RENTAL</h5>
+              <p>WE WILL TRY TO FULL FILL YOUR DREAMS </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 id="det1">
+            Details
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/10903/1695443447797/front-left-side-47.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div></div>
+            <div class="col-md-6">
+                <h3 id="det2">
+                    Fortuner
+                </h3>
+                <table class="table">
+                    <thead>
+                   <h5 id="det3">
+                    Local Packages
+                   </h5>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">4hr / 40km</th>
+                        <td></td>
+                        <td></td>
+                        <td>Rs 3500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8hr / 80km</th>
+                        <td></td>
+                        <td></td>
+                        <td>Rs 6000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10hr / 110km</th>
+                        <td colspan="2"></td>
+                        <td>Rs 8000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Extra Hours</th>
+                        <td colspan="2"></td>
+                        <td>Rs +220/hr</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Extra Kms</th>
+                        <td colspan="2"></td>
+                        <td>Rs +25/Km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Book Now
+  </button>
+  
+  <!-- Modal -->
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Please Enter Your Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputtext" class="form-label">Enter Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext" aria-describedby="textHelp">
+                </div>
+                </form>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                </form>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputNumber" class="form-label">Contact Number</label>
+                  <input type="text" class="form-control" id="exampleInputNumber" aria-describedby="textHelp">
+                </div>
+                </form>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputLoc" class="form-label">Pick UP Location</label>
+                  <input type="text" class="form-control" id="exampleInputLoc" aria-describedby="textHelp">
+                </div>
+                </form>
+          </div>
+          <form>
+        <div class="modal-footer det5">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="det7" class="btn btn-primary" onclick="fun()">Submit</button>
+        </div>
+          </form>
+      </div>
+    </div>
+  </div>  
+            </div>
+        </div>
+
+      </div>
+      <div class="container">
+      <p id="det6">
+        The Toyota Fortuner, also known as the Toyota SW4, is a mid-size SUV manufactured by the Japanese automaker Toyota since 2004. Built on the Hilux pickup truck platform, it features two/three rows of seats and is available in either rear-wheel drive or four-wheel drive configuration. It is a part of Toyota's IMV project for emerging markets, which also includes the Hilux and the Innova.
+
+ <br>The name Fortuner is derived from the English word fortune.[1]
+
+ <br>Production
+<br>While the first-generation Fortuner was developed in Thailand by Thai and Japanese engineers, its facelifted version, as well as the Hilux and Innova, was designed in Australia by Toyota Australia, which is also responsible for developing the second-generation model.[2]
+
+<br>For the medium body-on-frame SUV segment, Toyota offers the Hilux Surf/4Runner (Japan/North America) and the Land Cruiser Prado (Europe and Australasia). However, in some Central and South American countries and New Zealand, Toyota offers the Fortuner alongside the 4Runner and/or Prado, like in Peru, Panama, Ecuador, Colombia, El Salvador and Guatemala.
+
+<br>Specialised variants with a naturally-aspirated 5L-E diesel engine is offered to governments, organisations and the UN alongside other utility vehicles such as the Prado, Hilux, HiAce, and the 70 and 200 series Land Cruisers.[3][4]
+
+<br>First generation (AN50/AN60; 2004)
+<br>First generation
+
+<br>Fortuner 2.5 G (KUN60; pre-facelift, Malaysia)
+<br>Overview
+<br>Model code	
+<br>AN50AN60
+<br>Also called	
+<br>Toyota Hilux SW4
+<br>Toyota SW4
+<br>Production	November 2004 – December 2015
+<br>Assembly	
+<br>Argentina: Zárate (TASA)
+<br>Egypt: Cairo (AAV, from 2012)
+<br>India: Bidadi (TKM)
+I<br>ndonesia: Karawang, West Java (TMMIN)
+<br>Kazakhstan: Kostanay (from June 2014)
+<br>Malaysia: Shah Alam (UMW)
+<br>Thailand: Samut Prakan; Chachoengsao (TMT)
+<br>Venezuela: Cumaná
+<br>Vietnam: Vĩnh Phúc
+<br>Pakistan: Karachi (IMC)
+<br>Designer	
+<br>Satoshi Yokoi, Hideo Morita and Hiroyuki Kawagishi[5]
+<br>Satoshi Yokoi, Shigetoshi Kouzai and Naoto Furukado (2008 facelift)[6]
+<br>Body and chassis
+<br>Related
+<br>The first generation Fortuner was unveiled in December 2004 at the Thailand International Motor Expo and was available for sale in early 2005. It is positioned below the Land Cruiser and above the RAV4.
+
+
+<br>Rear view (pre-facelift, Malaysia)
+<br>At first, the Fortuner was sold with 4 different types of 2 petrol engines and 2 diesel engines. All variants were offered in 4×2 (RWD) or 4×4 configuration, with 5-speed manual transmission and a 4 or 5-speed automatic transmission. In August 2012, the 2.5-litre common-rail turbodiesel 2KD-FTV engine was upgraded to a variable nozzle turbocharger (VNT) which was already equipped in the 3.0-litre common-rail turbo diesel 1KD-FTV since its introduction in 2005 to increase power and torque about 60%, also reducing fuel consumption up to 30%. With this VNT equipment, the Fortuner could now accelerate from 0–100 km/h (0–62 mph) in about 11 seconds (less than 10 seconds for 3.0-litre engine).[7] It was launched to commemorate Pertamina's successful expedition from Jakarta, Indonesia to Rome, Italy (a distance of roughly 20,000 km; 12,000 miles) using a group of Fortuners.[8]
+
+<br>Variants
+<br>A number of engine options are available depending on the country of sale, including a 2.7-litre 2TR-FE and 4.0-litre 1GR-FE V6 petrol with Variable Valve Timing and 2.5-litre 2KD-FTV and 3.0-litre 1KD-FTV common rail variable geometry turbocharger diesel models.
+
+<br>Grade levels are G and G Luxury for rear-wheel drive diesel and petrol, and V for 4×4 Diesel and petrol. The common rail turbo intercooled diesel has a functional scoop on its hood.
+      </p>
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>E-mail</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="m0yh38">
+              <button class="btn btn-primary" type="button" fdprocessedid="usjpkc">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>Thank You For Visiting Car Rental</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+  </div>
+
+      <script>
+       function fun(){
+        let name=document.getElementById('exampleInputtext').value;
+        let email=document.getElementById('exampleInputEmail1').value;
+        let phone=document.getElementById('exampleInputNumber').value;
+        let loc=document.getElementById('exampleInputLoc').value;
+        if(name == "" || name == null && email == "" || email == null && phone == "" || phone == null && loc == "" || loc == null){
+          alert("please enter all the values properly")
+        }
+        else{
+
+          alert("Hello "+name+", your booking has been confirmed.")
+        }
+       }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
